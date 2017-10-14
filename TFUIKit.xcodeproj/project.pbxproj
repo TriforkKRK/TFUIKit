@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3330B41F91FAE30037613B /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3330B31F91FAE30037613B /* TableViewDataSource.swift */; };
 		2EF3E1211F91669E003BC253 /* TFUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF3E1171F91669D003BC253 /* TFUIKit.framework */; };
 		2EF3E1261F91669E003BC253 /* TFUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3E1251F91669E003BC253 /* TFUIKitTests.swift */; };
 		2EF3E1281F91669E003BC253 /* TFUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF3E11A1F91669D003BC253 /* TFUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3330B31F91FAE30037613B /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		2EF3E1171F91669D003BC253 /* TFUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF3E11A1F91669D003BC253 /* TFUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFUIKit.h; sourceTree = "<group>"; };
 		2EF3E11B1F91669D003BC253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				2EF3E11A1F91669D003BC253 /* TFUIKit.h */,
 				2EF3E11B1F91669D003BC253 /* Info.plist */,
+				2E3330B31F91FAE30037613B /* TableViewDataSource.swift */,
 			);
 			path = TFUIKit;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					2EF3E1161F91669D003BC253 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					2EF3E11F1F91669E003BC253 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3330B41F91FAE30037613B /* TableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		2EF3E12C1F91669E003BC253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.TFUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		2EF3E12D1F91669E003BC253 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		2EF3E12F1F91669E003BC253 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TFUIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		2EF3E1301F91669E003BC253 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TFUIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
